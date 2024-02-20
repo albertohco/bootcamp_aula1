@@ -1,18 +1,20 @@
-Aula 1 do Bootcamnp do Luciano Galvão
+# Aula 1 do Bootcamnp do Luciano Galvão
 
 Resumo dos exercícios feitos em aula:
 
-A) Exercícios de print(), input(), variáveis e estrutura de dados
+Exercícios de print(), input(), variáveis e estrutura de dados
 Parabéns! Agora que configuramos todas as ferramentas necessárias, vamos concluir nossa aula com um simples "Hello World" em Python.
 
 Abra o VSCode.
 Crie um novo arquivo Python.
 Crie um repositório no Github
 Crie nosso primeiro arquivo main.py
-Comandos
 
-1. print()
-   Para usar o comando print basta digitar print("Alguma coisa")
+Comandos:
+
+## 1) print()
+
+Para usar o comando print basta digitar print("Alguma coisa")
 
 Repare que ao redor do nosso texto, coloquei "o que eu quero escrever"
 
@@ -30,7 +32,11 @@ O primeiro passo quando você tem algum erro é buscar no Google uma solução p
 Também é possíve somar operações
 
 print(3 + 5)
-print("Olá" + " " + "Turma") 2) input()
+print("Olá" + " " + "Turma") 
+
+
+## 2) input()
+
 O comando input() em Python é uma função incorporada usada para capturar dados de entrada do usuário. Quando esse comando é executado, o programa pausa sua execução e espera que o usuário digite algo no console (ou terminal) e pressione Enter. Os dados inseridos pelo usuário são então retornados pela função input() como uma string (texto). Isso permite que programas interativos recebam informações do usuário para diversos fins, como parâmetros de execução, dados para processamento, escolhas em menus interativos, entre outros.
 
 Exemplo:
@@ -39,30 +45,35 @@ input("Digite seu nome: ")
 Concatenando texto
 
 print("Olá, " + input("Digite seu nome: ") + "!")
-Exercício 01
+
+## Exercício 01
 
 Crie programa que o usuário digita o seu nome e retorna o número de caracteres
 
 Digite o seu nome: Luciano
 7
-Exercício 02
+
+## Exercício 02
 
 Criar um programa onde o usuário digite dois valores e apareça a soma
 
 Digite um valor: 7
 Digite outro valo: 10
 17
-Considerações Importantes
+
+Considerações Importantes:
 Tipo de Dados: Por padrão, tudo o que é capturado pelo input() é tratado como uma string. Se você precisar trabalhar com outro tipo de dado (como inteiros ou floats), será necessário converter a entrada do usuário para o tipo desejado usando funções como int() ou float().
 
 idade = int(input("Digite sua idade: "))
+
 Segurança: Ao usar input() para receber dados do usuário, é importante considerar a validação desses dados, especialmente se eles forem usados em operações críticas ou transmitidos a outras partes do sistema.
 
 Usabilidade: O prompt deve ser claro e informativo para guiar o usuário sobre o que precisa ser inserido, melhorando a usabilidade e a experiência do usuário.
 
 O comando input() é uma ferramenta fundamental para criar scripts e programas interativos em Python, permitindo a coleta de dados de entrada de uma maneira fácil e acessível.
 
-3. Declaração e Atribuição de Variáveis
+## 3) Declaração e Atribuição de Variáveis
+
    Variáveis em Python são fundamentais para o desenvolvimento de programas, pois atuam como "recipientes" para armazenar dados que podem ser modificados ao longo da execução de um script. Ao contrário de algumas outras linguagens de programação, Python é dinamicamente tipado, o que significa que você não precisa declarar explicitamente o tipo de uma variável antes de usá-la. O tipo de uma variável é determinado automaticamente pelo Python no momento da atribuição de um valor.
 
 Declaração e Atribuição de Variáveis
@@ -73,7 +84,7 @@ numero = 10
 mensagem = "Olá, mundo!"
 No exemplo acima, numero é uma variável que armazena um inteiro (10), e mensagem é uma variável que armazena uma string ("Olá, mundo!").
 
-Tipos de Dados
+## 4) Tipos de Dados
 
 Python suporta vários tipos de dados, incluindo, mas não se limitando a:
 
@@ -86,7 +97,7 @@ Dicionários (dict)
 Booleanos (bool)
 A linguagem determina o tipo de dados de uma variável no momento da atribuição, o que permite grande flexibilidade, mas também exige atenção para evitar erros de tipo.
 
-Nomes de Variáveis
+## 5) Nomes de Variáveis
 
 Python tem algumas regras e convenções para nomes de variáveis:
 
@@ -102,7 +113,7 @@ x = 100 # x é um inteiro
 x = "Python" # Agora x é uma string
 Isso demonstra a tipagem dinâmica do Python, mas também destaca a importância de gerenciar tipos de dados com cuidado para evitar confusão ou erros em programas mais complexos.
 
-Escopo de Variáveis
+## 6) Escopo de Variáveis
 
 O escopo de uma variável determina onde ela é acessível dentro do código. Variáveis definidas em um bloco principal são globalmente acessíveis, enquanto variáveis definidas dentro de funções são locais a essas funções, a menos que sejam explicitamente declaradas como global.
 
@@ -113,12 +124,10 @@ Exercício 03: Refatore o exercício 02 atribuindo variáveis
 print(len(input("Digite o seu nome: ")))
 Qual é o seu nome? Luciano
 7
-Questão: Cálculo de Bônus com Entrada do Usuário
+
+## 7) Questão: Cálculo de Bônus com Entrada do Usuário
+
 Escreva um programa em Python que solicita ao usuário para digitar seu nome, o valor do seu salário mensal e o valor do bônus que recebeu. O programa deve, então, imprimir uma mensagem saudando o usuário pelo nome e informando o valor do salário em comparação com o bônus recebido.
-
-imagem
-
-imagem
 
 Instruções:
 O programa deve começar solicitando ao usuário que insira seu nome.
@@ -126,10 +135,11 @@ Em seguida, o programa deve pedir ao usuário para inserir o valor do seu salár
 Depois, o programa deve solicitar a porcentagem do bônus recebido pelo usuário, que também pode ser um número decimal.
 O cálculo do KPI do bônus de 2024 é de 1000 + salario \* bônus
 Finalmente, o programa deve imprimir uma mensagem no seguinte formato: "Olá [nome], o seu valor bônus foi de 5000".
+
 Exemplo de Saída:
 Se o usuário digitar "Luciano" como nome, "5000" como salário e "1.5" como bônus, o programa deve imprimir:
-
 Olá Luciano, o seu bônus foi de 8500
+
 Salve esse script python como kpi.py
 Faça uma documentação simples de como executar esse programa, utilize o README
 Salve no Git e no Github
